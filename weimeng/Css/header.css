@@ -1,0 +1,334 @@
+
+#header .nav{
+    position: absolute;
+    z-index: 10;
+    width: 100%;
+    height: 60px;
+}
+#header .nav:hover{
+    background-color: rgba(0 ,0, 0, 0.3);
+}
+#header .nav .content{
+    width: 1200px;
+    height: 60px;
+    margin: 0 auto;
+}
+#header .nav .content h1{
+    float: left;
+    width:128px;
+    height:60px;
+    background-image:url('../image/head/logo.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-position-y: 10px;
+    font-size: 0;
+}
+#header .nav .content .share{
+    float: left;
+    padding-top: 15px;
+    padding-left: 10px;
+    font-size: 12px;
+    color: white;
+    line-height: 13px;
+}
+#header .nav .content .nav-list{
+    float: left;
+    margin-left: 10px;
+}
+#header .nav .content .nav-list>li{
+    position: relative;
+    float: left;
+    width: 80px;
+    height: 60px;
+    color: white;
+    text-align: center;
+    line-height: 60px;
+    font-size: 14px;
+    cursor: pointer;
+}
+#header .nav .content .nav-list li:nth-child(8){
+    padding-top: 10px;
+    width: 120px;
+    line-height: normal;
+}
+#header .nav .content .nav-list>li:after{
+    content: "";   /*激活伪元素*/
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 5px;
+    margin: auto;
+    display: block;
+    width: 50px;
+    height: 3px;
+    background-color: white;
+    display: none;
+}
+#header .nav .content .nav-list li:nth-child(8):after{
+    content: "";   /*激活伪元素*/
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom:15px;
+    margin: auto;
+    display: block;
+    width: 50px;
+    height: 3px;
+    background-color: white;
+    display: none;
+}
+#header .nav .content .nav-list li:hover:after{
+    display: block;
+}
+/*
+    more bigin
+*/
+#header  .nav-list .more{
+    position: absolute;
+    left: -190px;
+    top:70px;
+    padding: 30px 25px 0;
+    width: 660px;
+    height:345px;
+    background-color: #fff;
+    border-radius: 5px;
+    opacity: 0;
+    visibility: hidden;
+}
+#header .nav .content .nav-list li:nth-child(1):hover .more{
+    opacity: 1;
+    top: 60px;
+    visibility: visible;
+    transition: .3s;
+}
+#header .nav-list .more .solution-type{
+    display:flex;
+    text-align: left;
+}
+#header .nav-list .more .solution-type>li{
+    flex: auto;
+    line-height: 40px;
+    margin-left: 10px;
+}
+#header .nav-list .more .solution-type>li>h3{
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ddd;
+}
+#header .nav-list .more .solution-type>li>h3>a{
+    color:#595961;
+    font-size: 14px;
+}
+#header .more .solution-type .solution-type-list>li>a{
+    font-size: 13px;
+    color: #595961;
+}
+#header .more .solution-type .solution-type-list>li>a:hover{
+    color: #2589ff;
+}
+/*
+    more end 
+*/
+#header .nav .content .login{
+    display: inline-block; 
+    font-size: 14px;
+    height: 60px;
+    line-height: 60px;
+    margin-left: 80px;
+}
+#header .nav .content .login>a{
+    color: white;
+}
+#header .nav .content .free{
+    display: inline-block;
+    width: 75px;
+    height: 25px;
+    font-size: 14px;
+    text-align: center;
+    line-height: 25px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-left: 10px;
+}
+#header .nav .content .manage{
+    display: inline-block;
+    width: 75px;
+    height: 25px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: center;
+    line-height: 25px;
+    margin-left: 10px;
+
+}
+#header .nav .content .free:hover{
+    background-color: #d3d4d6;
+}
+#header .nav .content .manage:hover{
+    background-color: #d3d4d6;
+}
+#header .nav .content .free>a{
+    color: white;
+}
+#header .nav .content .manage>a{
+    color: white;
+}
+#header .nav .content .manage>a:hover{
+    color: #2589ff;
+}
+#header .nav .content .free>a:hover{
+   color: #2589ff;
+}
+
+/*
+    swiper begin
+*/
+.header-swiper{
+    height: 440px;
+}
+.header-swiper .swiper-container {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 500px;
+}  
+.header-swiper .swiper-pagination-bullet{
+    width: 20px;
+    border-radius: 0;
+}
+.header-swiper .swiper-wrapper .slide1{
+    background-color: #1746d2;
+}
+.header-swiper .swiper-wrapper .slide2{
+    background-color: #5f2fe1;
+}
+.header-swiper .swiper-wrapper .slide3{
+    background-color: #2892fe;
+}
+.header-swiper .swiper-wrapper .slide4{
+    background-color: #3b6bee;
+}
+.header-swiper .swiper-wrapper .slide5{
+    background-color: #2589ff;
+}
+
+.header-swiper .swiper-wrapper .slide6{
+    background-color: #1f2736;
+}
+
+.header-swiper .swiper-wrapper .slide7{
+    background-color: #00d1dd;
+}
+
+.header-swiper .swiper-wrapper .slide8{
+    background-color: #0088ff;
+}
+
+.header-swiper .swiper-wrapper .slide9{
+    background-color: #c7b199;
+}
+
+.header-swiper .swiper-wrapper .slide10{
+    background-color: #ff6c55;
+}
+
+.header-swiper .swiper-wrapper .slide11{
+    background-color: #e62e3d;
+}
+.header-swiper .swiper-wrapper .content .swiper-title{
+    padding-top: 100px;
+    font-size: 60px;
+    font-weight:normal;
+    letter-spacing: 2px;
+}
+.header-swiper .swiper-wrapper .content .swiper-info{
+    padding-top: 15px;
+    line-height: 50px;
+    font-size: 25px;
+    letter-spacing: 2px;
+}
+.header-swiper .swiper-wrapper .content .swiper-bt{
+    width:160px;
+    height: 45px;
+    margin-top:60px;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 45px;
+    text-align: center;
+    transition: .3s;
+}
+.header-swiper .swiper-wrapper .content .swiper-bt:hover{
+    background-color: #fff;
+    color: #4395ff;
+    cursor: pointer;
+}
+.header-swiper .swiper-wrapper .content .bt-img{
+    position: absolute;
+    right: 100px;
+    bottom: 0;
+    width: 580px;
+}
+.header-swiper .swiper-wrapper .content .bt-img6{
+    position: absolute;
+    right: 100px;
+    bottom: 40px;
+    width: 700px;
+}
+.header-swiper .swiper-wrapper  .content .bt-img9{
+    position: absolute;
+    right: 100px;
+    bottom: 40px;
+    width: 700px;
+}
+/*
+    swiper end
+    header-info begin
+*/
+#header .header-info{
+    width: 100%;
+    height: 45px;
+    background-color: #fff;
+}
+#header .header-info .announce{
+    float: left;
+    line-height: 45px;
+    font-size: 13px;
+    color: #5975a8;
+}
+#header .header-info .header-info-list{
+    margin-left: 40px;
+    float: left;
+    display: flex;
+}
+#header .header-info .header-info-list>li{
+    position: relative;
+    flex: auto;
+    margin-left: 90px;
+    line-height: 45px;
+    font-size: 13px;
+    text-align: center;
+  
+}
+#header .header-info .header-info-list>li>a{
+    color:  #595961;
+}
+#header .header-info .header-info-list>li>a:hover{
+    text-decoration: underline;
+    color: #00d1dd;
+}
+#header .header-info .header-info-list>li:after{
+    content: "";
+    position: absolute;
+    top: 15px;
+    left: -20px;
+    display: block;
+    width: 6px;
+    height: 6px;
+    border:1px solid #e2e2ec;
+    border-radius: 50%;
+    padding: 3px;
+    background-clip: content-box;
+    background-color: #c1c1d6;
+}

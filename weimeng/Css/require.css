@@ -1,0 +1,171 @@
+#require{
+    width: 100%;
+    height: 750px;
+    background-color:#fff;
+}
+#require .require-title{
+    padding-top:120px;
+    font-size: 30px;
+    font-weight: 400px;
+    text-align: center;
+    color: #595961;
+}
+#require .require-info{
+    padding-top: 18px;
+    font-size: 16px;
+    text-align: center;
+    color: #595961;
+}
+#require .require-list{
+    margin:0 auto;
+    display: flex;
+    margin-top: 90px;
+    width: 1106px;
+    height: 340px;
+}
+#require .require-list>li{
+    position: relative;
+    height: 100%;
+   /* margin-left: 5px;*/
+   border: 1px solid #ccc;
+   color: #595961;
+   cursor: pointer;
+}
+#require .require-list>li .require-radio{
+    position: absolute;
+    width: 250px;
+    height: 100%;
+    opacity: 0;
+}
+#require .require-list>li .require-radio:checked{
+    z-index: -1;
+}
+#require .require-list>li .inside{
+    width: 250px;
+    height: 100%;
+    transition: .3s linear;
+}
+#require .require-list>li .require-radio:checked+.inside{
+    width: 350px;
+    height: 100%;
+}
+#require .require-list>li .inside .require-close{
+    width: 250px;
+    transition: .3s;
+}
+#require .require-list>li .require-radio:checked~.inside .require-close{
+    display: none;
+}
+#require .require-list>li .inside .open{
+    padding: 20px 20px 40px;
+    width: 310px;
+    height: 280px;
+    opacity: 0;
+}
+#require .require-list>li .require-radio:checked~.inside .open{
+    transition: .5s;
+    opacity: 1;
+}
+#require .require-list>li .inside .require-close-img{
+    width: 55px;
+    height: 50px;
+    margin:30px auto 10px;
+    background-image: url(../image/require/1.png);
+    background-repeat: no-repeat;
+}
+#require .require-list>li .inside .close-img1{
+    width: 55px;
+    height: 50px;
+    background-position: 10px 10px;
+}
+#require .require-list>li .inside .close-img2{
+    width: 55px;
+    height: 50px;
+    background-position: 10px -78px;
+}
+#require .require-list>li .inside .close-img3{
+    width: 60px;
+    height: 30px;
+    margin:50px auto 10px;
+    background-position: -1px -166px;
+}
+#require .require-list>li .inside .close-img4{
+    height: 44px;
+    margin: 32px auto 10px;
+    background-position: -2px -266px;
+}
+#require .require-list>li .inside .require-close-title{
+    position: relative;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 400;
+}
+#require .require-list>li .inside .require-close-title::after{
+    content: "";
+    position: absolute;
+    bottom: -20px;
+    left: 0;
+    right: 0;
+    margin:auto;
+    width: 40px;
+    height: 1px;
+    background-color: #ccc;
+}
+
+#require .require-list>li .inside .require-close>p:nth-of-type(1){
+    padding-top: 40px;
+}
+
+#require .require-list>li .inside .require-close>p{
+    text-align: center;
+    padding-top: 15px;
+}
+#require .require-list>li .inside .open .open-img{
+    width: 100%;
+    height: 40px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #ddd;
+}
+#require .require-list>li .inside .open .open-img .open-img-item{
+    display: inline-block;
+    float: left;
+    width: 50px;
+    height: 100%;
+    background-image: url('../image/require/1.png');
+    background-repeat: no-repeat;
+}
+#require .require-list>li .inside .open .open-img .img-item1{
+    background-position: 0 -39px;
+}
+#require .require-list>li .inside .open .open-img .img-item2{
+    background-position: 0 -128px;
+}
+#require .require-list>li .inside .open .open-img .img-item3{
+    width: 59px;
+    height: 78%;
+    background-position: -1px -192px;
+}
+#require .require-list>li .inside .open .open-img .img-item4{
+    background-position: -2px -304px;
+
+}
+#require .require-list>li .inside .open .open-img .open-img-item+span{
+  float: left;
+  line-height: 40px;
+  font-size: 25px;
+}
+#require .require-list>li .inside .open .open-info{
+    text-align: left;
+    padding-top:30px;
+}
+#require .require-list>li .inside .open .open-info+p>a{
+    display: inline-block;
+    position: absolute;
+    bottom: 20px;
+    left: 10px;
+    padding-top:20px;
+    text-align: left;
+    font-size: 14px;
+    color: #52b9ff;
+    cursor: pointer;
+}

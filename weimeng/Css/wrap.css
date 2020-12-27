@@ -1,0 +1,152 @@
+#wrap{
+    width: 100%;
+    height: 750px;
+
+}
+#wrap .wrap-title{
+    padding-top: 120px;
+    color: #000;
+    font-size: 35px;
+    font-weight: 400;
+    text-align: center;
+}
+#wrap .wrap-info{
+    text-align: center;
+    padding-top:20px;
+    color: #5e646b;
+    font-size: 20px;
+}
+#wrap .wrap-list{
+    height: 260px;
+    width: 100%;
+    margin-top:70px;
+    display: flex;
+   
+}
+#wrap .wrap-list>li{
+    position: relative;
+    width: 270px;
+    flex: auto;
+    text-align: center;
+    margin-left: 20px;
+    box-shadow: 0 0 5px #ccc inset;
+   
+}
+#wrap .wrap-list .bg{
+    height: 150px;
+    background-position: center;
+    background-size: cover;
+  }
+#wrap .wrap-list>li:nth-child(1) .bg{
+    background-image: url('../image/wrap/01.png');
+}
+#wrap .wrap-list>li:nth-child(2) .bg{
+    background-image: url('../image/wrap/02.png');
+}
+#wrap .wrap-list>li:nth-child(3) .bg{
+    background-image: url('../image/wrap/03.png');
+}
+#wrap .wrap-list>li:nth-child(4) .bg{
+    background-image: url('../image/wrap/04.png');
+}
+#wrap .wrap-list>li .wrap-list-title{
+    position: relative;
+    padding-top: 10px;
+    color: #555;
+    font-size: 22px;
+    font-weight: 700;
+}
+#wrap .wrap-list>li .wrap-list-title::after{
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: 126px;
+    display: block;
+    width: 28px;
+    height: 3px;
+    background-color: blue;
+}
+#wrap .wrap-list>li  .wrap-list-info{
+    padding-top:30px;
+    font-size: 16px;
+    color: #777;
+}
+#wrap .wrap-list>li:hover .cover{
+    opacity: 1;
+    cursor: pointer;
+    transition: .3s;
+}
+#wrap .wrap-list>li  .cover{
+    position: absolute;
+    top: 0;
+    left: 0px;
+    width: 242px;
+    height: 220px;
+    padding:40px 21px 0;
+    background-color: #fff;
+     opacity: 0;
+}
+#wrap .wrap-list>li  .cover .cover-title{
+    font-size: 25px;
+    color: #777777;;
+}
+#wrap .wrap-list>li  .cover .cover-info{
+    position: relative;
+    padding-top: 10px;
+    text-align: justify;
+    font-size: 14px;
+    color: #777;
+    line-height: 27px;
+}
+#wrap .wrap-list>li  .cover .cover-info::after{
+    content: "";
+    position: absolute;
+    bottom: -10px;;
+    left: 0;
+    display: block;
+    width: 20px;
+    height:3px;
+    background-color: blue;
+}
+#wrap .wrap-list>li  .cover .cover-bz{
+    font-size: 16px;
+    color: #777;
+    font-weight: 600;
+}
+#wrap .wrap-list>li  .cover .cover-item{
+    padding-top:20px;
+    color: #666;
+    text-align: left;
+    font-size: 15px;
+
+}
+#wrap .informe{
+    margin-top: 40px;
+    position: relative;
+}
+#wrap .informe .informe-class{
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 400px;
+    height: 52px;
+    border:1px solid #7cb8ff;
+}
+#wrap .informe .informe-class .informe-text{
+    width: 250px;
+    height: 50px;
+    text-indent: 1em;
+    font-size: 25px;
+    line-height: 50px;
+    vertical-align: 4px;
+}
+#wrap .informe .informe-class .informe-bt{
+    width: 150px;
+    height: 52px;
+    background-color: #7cb8ff;
+    color: #fff;
+    font-size: 18px;
+    line-height: 52px;
+    vertical-align: 6px;
+}

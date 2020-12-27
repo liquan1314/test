@@ -1,0 +1,34 @@
+#number{
+    width: 100%;
+    height: 230px;
+    background-color: #fff;
+    padding-top: 200px;
+}
+#number .number-list{
+    display: flex;
+    width: 1000px;
+    height: 100px;
+   
+    margin: 0 auto;
+}
+#number .number-list>li{
+    width: 150px;
+    flex: auto;
+    margin-left: 120px;
+}
+#number .number-list>li .number-list-title{
+    padding-top: 10px;
+    font-size: 40px;
+    color: #595961;
+    text-align: center;
+    font-weight: 400;
+}
+#number .number-list>li .number-list-info{
+    padding-top: 10px;
+    font-size: 16px;
+    color: #595961;
+    text-align: center;
+}
+#number .number-list>li:nth-child(1){
+    margin-left: 50px;
+}

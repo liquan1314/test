@@ -1,0 +1,41 @@
+#service{
+    width: 100%;
+    height: 880px;
+    background-color: #f1f1f5;
+}
+#service .content{
+    background-image: url('../image/service/1.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#service .service-title{
+    padding-top: 100px;
+    text-align: center;
+    font-size: 30px;
+    color: #595961;
+}
+#service .service-info{
+    padding-top: 20px;
+    text-align: center;
+    font-size: 18px;
+    color: #595961;
+}
+#service  .service-list{
+    margin-top: 130px;
+    width: 100%;
+}
+#service  .service-list>li{
+    margin-top: 70px;
+    color: #595961;
+}
+#service  .service-list>li .service-number{
+    padding-left:50px;
+    color: #2589ff;
+    font-size: 50px;
+    letter-spacing: 2px;
+    text-align: left;
+}
+#service  .service-list>li .service-number+p{
+    padding-left: 50px;
+}

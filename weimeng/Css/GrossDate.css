@@ -1,0 +1,28 @@
+#GrossDate{
+    width: 100%;
+    height: 240px;
+    background-image: url('../image/GrossDate/f8_bg.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+#GrossDate .GrossDate-info{
+    width: 900px;
+    padding-top: 70px;
+    margin:0 auto;
+    font-size: 30px;
+    font-weight: 100;
+    letter-spacing: 10px;
+}
+#GrossDate .GrossDate-info .GrossDate-number{
+    font-size: 60px;
+    letter-spacing: 20px;
+}
+#GrossDate .GrossDate-info +p{
+    width: 900px;
+    padding-top: 10px;
+    font-size: 30px;
+    font-weight: 100;
+    letter-spacing: 40px;
+    margin:0 auto;
+}
